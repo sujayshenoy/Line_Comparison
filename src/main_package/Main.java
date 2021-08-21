@@ -7,11 +7,11 @@ public class Main {
 		
 		//Line 1
 		Point p1 = new Point(10,10);
-		Point p2 = new Point(20,20);
+		Point p2 = new Point(30,30);
 		
 		//Line 2
 		Point p3 = new Point(30,30);
-		Point p4 = new Point(40,40);
+		Point p4 = new Point(40,70);
 		
 		double l1_length = p1.lengthBetween(p2);
 		double l2_length = p3.lengthBetween(p4);
@@ -21,7 +21,13 @@ public class Main {
 		
 		if(l1_length == l2_length) {
 			System.out.println("Two Lines l1 and l2 are equal");
-		}		
+		}
+		else if(l1_length > l2_length) {
+			System.out.println("Line l1 is longer than line l2");
+		}
+		else {
+			System.out.println("Line l2 is longer than line l1");
+		}
 	}
 
 }
