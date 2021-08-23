@@ -11,27 +11,22 @@ public class Main {
 		
 		//Line 2
 		Point p3 = new Point(30,30);
-		Point p4 = new Point(50,70);
+		Point p4 = new Point(40,70);
 		
-		Double l1_length = new Double(p1.lengthBetween(p2));
-		Double l2_length = new Double(p3.lengthBetween(p4));
+		double l1_length = p1.lengthBetween(p2);
+		double l2_length = p3.lengthBetween(p4);
 		
 		System.out.println("Length of line l1 is: "+String.format("%.2f",l1_length));
 		System.out.println("Length of line l1 is: "+String.format("%.2f",l2_length));
 		
-		if(l1_length.equals(l2_length)) {
+		if(l1_length == l2_length) {
 			System.out.println("Two Lines l1 and l2 are equal");
 		}
+		else if(l1_length > l2_length) {
+			System.out.println("Line l1 is longer than line l2");
+		}
 		else {
-			int res = l1_length.compareTo(l2_length);
-			switch (res) {
-			case 1:
-				System.out.println("Line l1 is longer than line l2");
-				break;
-			case -1:
-				System.out.println("Line l2 is longer than line l1");
-				break;
-			}
+			System.out.println("Line l2 is longer than line l1");
 		}
 	}
 
