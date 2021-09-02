@@ -19,11 +19,13 @@ public class Main {
 		System.out.println("Length of line l1 is: "+String.format("%.2f",l1_length));
 		System.out.println("Length of line l1 is: "+String.format("%.2f",l2_length));
 		
+
 		if(l1_length.equals(l2_length)) {
-			System.out.println("Two Lines l1 and l2 are equal");
+			System.out.println("Both Lines l1 and l2 are equal");
 		}
 		else {
 			int res = l1_length.compareTo(l2_length);
+
 			switch (res) {
 			case 1:
 				System.out.println("Line l1 is longer than line l2");
